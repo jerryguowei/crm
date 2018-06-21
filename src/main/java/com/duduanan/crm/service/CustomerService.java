@@ -1,12 +1,11 @@
-package com.duduanan.crm.dao;
+package com.duduanan.crm.service;
 
 import java.util.List;
 
 import com.duduanan.crm.entity.Customer;
 
-public interface CustomerDAO {
-  
-	public List<Customer> getCustomers();
+public interface CustomerService {
+    public List<Customer> getCustomers();
 
 	public void saveCustomer(Customer theCustomer);
 
