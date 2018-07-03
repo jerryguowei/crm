@@ -7,8 +7,8 @@ User can update/create/delete customer records.
 Using Spring MVC,hibernate,Spring Security..etc.
 
 The Rest API Support to create read update delete records.
- 1. crm/api/customers 
-    Method:GET
+ 1. url: crm/api/customers 
+         Method:GET
     get a list of records
     authoried to all the user.
  2. crm/api/customers/id
