@@ -30,7 +30,7 @@ public class CrmSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers(HttpMethod.GET, "/api/customers").hasRole("EMPLOYEE")
 		.antMatchers(HttpMethod.GET, "/api/customers/*").hasRole("EMPLOYEE") 
 		.antMatchers(HttpMethod.POST, "/api/customers").hasAnyRole("MANAGER", "ADMIN")
-		.antMatchers(HttpMethod.PUT, "/api/customers").hasAnyRole("MANAGER", "ADMINmary")
+		.antMatchers(HttpMethod.PUT, "/api/customers").hasAnyRole("MANAGER", "ADMIN")
 		.antMatchers(HttpMethod.DELETE, "/api/customers/*").hasRole("ADMIN")
 		.and()
 		.httpBasic()
